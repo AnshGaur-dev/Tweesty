@@ -16,7 +16,7 @@ class TweetsViewModel @Inject constructor(private val repo: TweetRepo) : ViewMod
 
     init {
         viewModelScope.launch {
-            repo.gettweets("coding")
+            repo.gettweets("macos")
         }
     }
 }
