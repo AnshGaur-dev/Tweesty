@@ -31,7 +31,6 @@ class TweetRepo @Inject constructor(private val tweetsyApi: TweetsyApi) {
         val response = tweetsyApi.getTweets("tweets[?(@.category==\"$category\")]")
         if (response.isSuccessful && response.body() != null) {
             _tweets.emit(response.body()!!)
-
         }
     }
 }
