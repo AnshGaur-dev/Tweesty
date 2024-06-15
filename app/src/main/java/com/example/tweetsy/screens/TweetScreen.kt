@@ -16,6 +16,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.paint
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
+import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.example.tweetsy.ViewModel.CategoryViewModel
 import com.example.tweetsy.ViewModel.TweetsViewModel
@@ -23,7 +24,7 @@ import com.example.tweetsy.models.TweetListItem
 
 @Composable
 fun TweetScreen (){
-    val tweetsViewModel: TweetsViewModel = viewModel() // Create CategoryViewModel instance to fetch items
+    val tweetsViewModel: TweetsViewModel = hiltViewModel() // Create CategoryViewModel instance to fetch items
     val tweets = tweetsViewModel.tweets.collectAsState()
     LazyColumn {
         items(tweets.value) { tweetItem ->

@@ -83,8 +83,8 @@ dependencies {
     implementation("androidx.compose.material3:material3:1.2.1")
     implementation ("androidx.compose.material:material:1.6.6")
     implementation ("androidx.navigation:navigation-compose:2.7.7")
-    implementation("androidx.hilt:hilt-navigation-fragment:1.0.0")
-    implementation("androidx.hilt:hilt-navigation-compose:1.0.0")
+    implementation("androidx.hilt:hilt-navigation-fragment:1.2.0")
+    implementation("androidx.hilt:hilt-navigation-compose:1.2.0")
 
     val lifecycle_version = "2.8.2"
     val arch_version = "2.2.0"
